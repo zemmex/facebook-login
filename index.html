@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>facebook login</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <style>
+img{
+    width:100%;
+    height:15em;
+}
+body{
+    margin:0;
+}
+#langs{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:4em;
+}
+#langs *{
+    margin:0 5px;
+    font-size:13px;
+}
+select{
+    background:none;
+    border:none;
+    width:50px;
+    color:rgba(20,50,250,0.7);
+    font-size:15px;
+
+}
+select:hover{
+    background:gray;
+    border:none;
+    border-radius:4px;
+}
+#login_info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:-20px;
+}
+#login_info input{
+    width:84%;
+    height:2em;
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+    font-size:18px;
+    padding-left:5px;
+    padding-bottom:15px;
+    text-transform:capitalize;
+    font-family:monospace;
+}
+#username{
+    margin-bottom:0.5em;
+}
+#label{
+    width:360px;
+    height:2.8em;
+    background:rgb(50,108,251);
+    border-radius:7px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:2em;
+    color:white;
+    font-weight:bold;
+}
+#loginaccount{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:1em;
+    text-transform:capitalize;
+}
+#forgot{
+    margin-top:-0.5em;
+    color:rgb(50,108,251);;
+    font-weight:bold;
+
+
+}
+#or{
+    margin:1.5em 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:monospace;
+
+}
+#or p{
+    margin:0 -5px;
+    text-transform:uppercase;
+}
+hr{
+    width:42%;
+}
+#conti{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:3em;
+    margin-bottom:4em;
+}
+#create{
+    width:60%;
+    height:3em;
+    font-weight:bold;
+    background:rgba(40,140,20,0.8);
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-family:monospace;
+    text-transform:capitalize;
+}
+        </style>
+    </head>
+    <body>
+        <img src="./top.png"/>
+        <div id="langs">
+<p>فارسی</p>•
+<p>Espanol</p>•
+    <select id="lang_list">
+        <option hidden>More...</option>
+        <option checked>Device Language</option>
+        <option>فارسی</option>
+        <optiin>Espanol</optiin>
+        <option>russian</option>
+        <option>العربیه</option>
+        <option>Deutsch</option>
+        <option>turkish</option>
+        <option>itali</option>
+    </select>
+        </div>
+        <div id="login_info">
+            <input id="username" type="text" placeholder=
+            "phone or email"/><br/>
+            <input id="password" type="password" placeholder=
+            "password"/>
+        </div>
+    <div id="loginaccount">
+        <label for="username">
+            <p id="label">log in</p>
+        </label>
+        <p id="forgot">forgot password ?</p>
+        
+    </div>
+    <div id="or">
+        <hr/><p>or</p><hr/>
+    </div>
+<div id="conti">
+    <button id="create">create new facebook account</button>
+</div>
+    </body>
+</html>
